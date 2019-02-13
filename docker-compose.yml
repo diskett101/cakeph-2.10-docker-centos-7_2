@@ -1,0 +1,10 @@
+version: '2'
+services:
+  cakephp_dockerized:
+    container_name: cakephp_dockerized
+    image: img_cakephp_dockerized
+    build: .
+    ports:
+      - 8081:80
+    volumes:
+      - ./web-app:/var/www/html
